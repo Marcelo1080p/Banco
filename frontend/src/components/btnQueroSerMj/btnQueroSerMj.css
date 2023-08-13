@@ -1,0 +1,17 @@
+.btnMj {
+    border: none;
+    min-width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #006d75;
+    color: #FFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.3s;
+}
+
+.btnMj:hover {
+    transform: scale(1.05);
+}
