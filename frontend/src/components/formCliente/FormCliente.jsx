@@ -11,7 +11,7 @@ export const FormCliente = () => {
   };
 
   return (
-    <Form name="form_cliente" layout="vertical" onFinish={onFinish}>
+    <Form name="form_cliente" layout="vertical" onFinish={onFinish} style={{ width: "35rem"}}>
       <Form.Item label="Nome" name="nome" rules={[{ required: true, message: 'Por favor, insira o nome' }]}>
         <Input />
       </Form.Item>

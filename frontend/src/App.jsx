@@ -4,6 +4,7 @@ import { Layout, Menu, Space } from "antd";
 const { Header, Content, Footer } = Layout;
 import { BtnQueroSerMj } from "./components/btnQueroSerMj/btnQueroSerMj";
 import { DropDown } from "./components/dropDown/DropDown";
+import { Link } from "react-router-dom";
 
 const App = () => {
   const tituloPrincipal = {
@@ -22,12 +23,12 @@ const App = () => {
   const styleMenu = {
     display: "flex",
     gap: "0 2rem",
-    border: "1px solid",
     minWidth: "1000px",
     height: "60px",
     color: "black",
     fontFamily: "Inter, sans-serif",
     fontWeight: "600",
+    backgroundColor: "transparent",
   };
 
   return (
@@ -49,12 +50,12 @@ const App = () => {
           <p>Página inicial</p>
           <DropDown />
         </Menu>
-
-        <BtnQueroSerMj />
+        <Link to="/cadastro/cliente">
+          <BtnQueroSerMj />
+        </Link>
       </Header>
       <Content
         style={{
-          backgroundImage: "",
           overflow: "hidden",
           width: "100%",
         }}
